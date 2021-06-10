@@ -1,0 +1,25 @@
+{
+  "name": "umoopy-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js -n umoopy-bot -l out.log",
+    "stop": "pm2 stop umoopy-bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musthbly/umoopy-bot.git"
+  },
+  "author": "musthbly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/musthbly/umoopy-bot/issues"
+  },
+  "homepage": "https://github.com/musthbly/umoopy-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "pm2": "^5.1.0"
+  }
+}
