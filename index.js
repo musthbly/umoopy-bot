@@ -12,25 +12,72 @@ bot.on("ready", () => {
 })
 
 bot.on("message", message => {
-  switch (message.content.toLowerCase().replace(/"|'/g, "")) {
-    // TODO More variations
-    case "groovy > umoopy":
-    case "groovy is better than umoopy":
-    case "groovy is greater than umoopy":
-    case "groovys better than umoopy":
-    case "groovys greater than umoopy":
+  switch (
+    message.content.toLowerCase()
+      // Punctuation/markup
+      .replace(/"|'|\-|–|—|\.|\,|!|`|~|\*/g, "")
+      // Emoticons
+      .replace(/=|;/, ":")
+      .replace(/\\|\//, "|")
+  ) {
     case "i dislike umoopy":
+    case "i dislike u umoopy":
+    case "i dislike you umoopy":
     case "i do not like umoopy":
+    case "i do not like u umoopy":
+    case "i do not like you umoopy":
     case "i dont like umoopy":
+    case "i dont like u umoopy":
+    case "i dont like you umoopy":
     case "i hate umoopy":
+    case "i hate u umoopy":
+    case "i hate you umoopy":
+    case "i strongly dislike umoopy":
+    case "i strongly dislike u umoopy":
+    case "i strongly dislike you umoopy":
     case "umoopy is bad":
+    case "umoopy is crap":
+    case "umoopy is crappy":
     case "umoopy is dumb":
     case "umoopy is stupid":
+    case "umoopy is sucky":
     case "umoopy sucks":
     case "umoopys bad":
+    case "umoopys crap":
+    case "umoopys crappy":
     case "umoopys dumb":
     case "umoopys stupid":
+    case "umoopys sucky":
       message.channel.send("i don't like your attitude!")
+      break
+    case ":|":
+    case "|:":
+    case "i :| u":
+    case "i :| you":
+    case "i |: u":
+    case "i |: you":
+    case "i :| u umoopy":
+    case "i :| you umoopy":
+    case "i |: u umoopy":
+    case "i |: you umoopy":
+      message.channel.send("i :| you too!")
+      break
+    case ">:|":
+    case "|:<":
+    case "i >:| u":
+    case "i >:| you":
+    case "i |:< u":
+    case "i |:< you":
+    case "i >:| u umoopy":
+    case "i >:| you umoopy":
+    case "i |:< u umoopy":
+    case "i |:< you umoopy":
+      message.channel.send("i >:| you too!")
+      break
+    case "what is your favorite animal":
+    case "whats your favorite animal":
+      message.channel.send("the cucumber is a majestic creature")
+      message.channel.send("https://wikipedia.org/wiki/Cucumber")
       break
     case "moopy":
       message.channel.send("heyheehawhaha")
