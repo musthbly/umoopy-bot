@@ -9,6 +9,6 @@ jobs:
         with:
           node-version: "16"
       - run: npm install
-      - run: npm restart
+      - run: npm start
         env:
           TOKEN: ${{ secrets.TOKEN }}
