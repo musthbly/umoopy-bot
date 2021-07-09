@@ -74,8 +74,30 @@ bot.on("message", message => {
     case "i |:< you umoopy":
       message.channel.send("i >:| you too!")
       break
+    case "what is ur fav animal":
+    case "what is ur fav animal umoopy":
+    case "what is ur fave animal":
+    case "what is ur fave animal umoopy":
+    case "what is ur favorite animal":
+    case "what is ur favorite animal umoopy":
+    case "what is your fav animal":
+    case "what is your fav animal umoopy":
+    case "what is your fave animal":
+    case "what is your fave animal umoopy":
     case "what is your favorite animal":
+    case "what is your favorite animal umoopy":
+    case "whats ur fav animal":
+    case "whats ur fav animal umoopy":
+    case "whats ur fave animal":
+    case "whats ur fave animal umoopy":
+    case "whats ur favorite animal":
+    case "whats ur favorite animal umoopy":
+    case "whats your fav animal":
+    case "whats your fav animal umoopy":
+    case "whats your fave animal":
+    case "whats your fave animal umoopy":
     case "whats your favorite animal":
+    case "whats your favorite animal umoopy":
       message.channel.send("the cucumber is a majestic creature")
       message.channel.send("https://wikipedia.org/wiki/Cucumber")
       break
