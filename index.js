@@ -6,6 +6,15 @@ bot.login(process.env.TOKEN)
 const fs = require("fs")
 const path = require("path")
 const images = fs.readdirSync(path.join(__dirname, "images"))
+const randomImage = message => {
+  const file = images[Math.floor(Math.random() * images.length)]
+  const attachment = new Discord.MessageAttachment(`images/${file}`, file)
+  const embed = new Discord.MessageEmbed()
+    .setTitle(file)
+    .attachFiles(attachment)
+    .setImage(`attachment://${file}`)
+  message.channel.send(embed)
+}
 
 bot.on("ready", () => {
   console.log(`Logged in as ${bot.user.tag}`)
@@ -13,25 +22,40 @@ bot.on("ready", () => {
 
 bot.on("message", message => {
   switch (
-    message.content.toLowerCase()
+    message.content
+      .toLowerCase()
+      .replace("\n", "")
       // Punctuation/markup
-      .replace(/"|'|\-|–|—|\.|\,|!|`|~|\*/g, "")
+      .replace(/"|'|\-|–|—|\.|\,|!|`|~|\*|\>/g, "")
       // Emoticons
       .replace(/=|;/, ":")
       .replace(/\\|\//, "|")
+      .replace(/:(\)\)*|\(\(*)|(\)\)*|\(\(*):/, "")
+      // Whitespace must be trimmed after everything else is removed
+      .trim()
   ) {
+    case "i dislike the bot umoopy":
+    case "i dislike the umoopy bot":
     case "i dislike umoopy":
     case "i dislike u umoopy":
     case "i dislike you umoopy":
+    case "i do not like the bot umoopy":
+    case "i do not like the umoopy bot":
     case "i do not like umoopy":
     case "i do not like u umoopy":
     case "i do not like you umoopy":
+    case "i dont like the bot umoopy":
+    case "i dont like the umoopy bot":
     case "i dont like umoopy":
     case "i dont like u umoopy":
     case "i dont like you umoopy":
+    case "i hate the bot umoopy":
+    case "i hate the umoopy bot":
     case "i hate umoopy":
     case "i hate u umoopy":
     case "i hate you umoopy":
+    case "i strongly dislike the bot umoopy":
+    case "i strongly dislike the umoopy bot":
     case "i strongly dislike umoopy":
     case "i strongly dislike u umoopy":
     case "i strongly dislike you umoopy":
@@ -101,15 +125,14 @@ bot.on("message", message => {
       message.channel.send("the cucumber is a majestic creature")
       message.channel.send("https://wikipedia.org/wiki/Cucumber")
       break
+    // Misspelling of "okay"
+    case "oaky":
+      message.channel.send("ouhahhkeyheyheehee")
+      randomImage(message)
+      break
     case "moopy":
       message.channel.send("heyheehawhaha")
-      const file = images[Math.floor(Math.random() * images.length)]
-      const attachment = new Discord.MessageAttachment(`images/${file}`, file)
-      const embed = new Discord.MessageEmbed()
-        .setTitle(file)
-        .attachFiles(attachment)
-        .setImage(`attachment://${file}`)
-      message.channel.send(embed)
+      randomImage(message)
       break
     case "stocks":
       message.channel.send("buy umoopy stocks")

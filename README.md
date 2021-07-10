@@ -12,5 +12,5 @@ Your Bonfire friend.
 | ":\|" or similar                         | "i :\| you too!"                      |
 | ">:\|" or similar                        | "i >:\| you too!"                     |
 | "what's your favorite animal" or similar | "the cucumber is a majestic creature" |
-| "moopy"                                  | A random Umoopy image                 |
+| "moopy", "oaky"                          | A random Umoopy image                 |
 | "stocks"                                 | "buy umoopy stocks"                   |
