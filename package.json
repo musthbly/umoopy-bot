@@ -21,5 +21,8 @@
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "pm2": "^5.1.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
   }
 }
