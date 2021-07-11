@@ -33,6 +33,7 @@ bot.on('message', message => {
       .replace(/:(\)\)*|\(\(*)|(\)\)*|\(\(*):/, '')
       // Whitespace must be trimmed after everything else is removed
       .trim()
+      .replace(/\s+/g, ' ')
   ) {
     case 'i dislike the bot umoopy':
     case 'i dislike the umoopy bot':
