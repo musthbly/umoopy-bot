@@ -1,9 +1,10 @@
 {
   "name": "umoopy-bot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "standard",
     "start": "pm2 start index.js -n umoopy-bot -l out.log",
     "stop": "pm2 stop umoopy-bot"
   },
