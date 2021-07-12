@@ -9,8 +9,8 @@ Your Bonfire friend.
 | Message                                  | Reply                                 |
 |:----------------------------------------:|:-------------------------------------:|
 | Anything bad about Umoopy                | "i don't like your attitude!"         |
-| ":\|" or similar                         | "i :\| you too!"                      |
-| ">:\|" or similar                        | "i >:\| you too!"                     |
-| "what's your favorite animal" or similar | "the cucumber is a majestic creature" |
+| ":\|"                                    | "i :\| you too!"                      |
+| ">:\|"                                   | "i >:\| you too!"                     |
+| "what's your favorite animal"            | "the cucumber is a majestic creature" |
 | "moopy", "oaky"                          | A random Umoopy image                 |
 | "stocks"                                 | "buy umoopy stocks"                   |
