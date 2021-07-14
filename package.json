@@ -1,7 +1,7 @@
 {
   "name": "umoopy-bot",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Your Bonfire friend.",
   "main": "index.js",
   "scripts": {
     "lint": "standard",

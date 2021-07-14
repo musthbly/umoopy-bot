@@ -6,14 +6,14 @@ bot.login(process.env.TOKEN)
 const fs = require('fs')
 const path = require('path')
 const images = fs.readdirSync(path.join(__dirname, 'images'))
-const randomImage = message => {
+const randomImage = () => {
   const file = images[Math.floor(Math.random() * images.length)]
   const attachment = new Discord.MessageAttachment(`images/${file}`, file)
   const embed = new Discord.MessageEmbed()
     .setTitle(file)
     .attachFiles(attachment)
     .setImage(`attachment://${file}`)
-  message.channel.send(embed)
+  return embed
 }
 
 bot.on('ready', () => {
@@ -26,7 +26,7 @@ bot.on('message', message => {
       .toLowerCase()
       .replace('\n', '')
       // Punctuation/markup
-      .replace(/"|'|-|–|—|\.|,|!|`|~|\*|_|>/g, '')
+      .replace(/"|'|-|–|—|\.|,|!|\?|`|~|\*|_|>/g, '')
       // Emoticons
       .replace(/=|;/, ':')
       .replace(/\\|\//, '|')
@@ -129,14 +129,29 @@ bot.on('message', message => {
     // Misspelling of "okay"
     case 'oaky':
       message.channel.send('ouhahhkeyheyheehee')
-      randomImage(message)
+      message.channel.send(randomImage())
       break
     case 'moopy':
       message.channel.send('heyheehawhaha')
-      randomImage(message)
+      message.channel.send(randomImage())
       break
     case 'stocks':
       message.channel.send('buy umoopy stocks')
+      break
+    case 'i am having a crisis of existence':
+    case 'i am having an existential crisis':
+    case 'i hate my life':
+    case 'i have been living a lie':
+    case 'im having a crisis of existence':
+    case 'im having an existential crisis':
+    case 'ive been living a lie':
+    case 'is anything real':
+    case 'my entire life is a lie':
+    case 'my life is a lie':
+    case 'my whole life is a lie':
+    case 'nothing matters in this world':
+    case 'we all fade away eventually':
+      message.react('👀')
       break
   }
 })
