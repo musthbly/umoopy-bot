@@ -6,11 +6,12 @@ Your Bonfire friend.
 
 ## Rules
 
-| Message                                  | Reply                                 |
-|:----------------------------------------:|:-------------------------------------:|
-| Anything bad about Umoopy                | "i don't like your attitude!"         |
-| ":\|"                                    | "i :\| you too!"                      |
-| ">:\|"                                   | "i >:\| you too!"                     |
-| "what's your favorite animal"            | "the cucumber is a majestic creature" |
-| "moopy", "oaky"                          | A random Umoopy image                 |
-| "stocks"                                 | "buy umoopy stocks"                   |
+| Message                       | Reply/Reaction                        |
+|:-----------------------------:|:-------------------------------------:|
+| Something bad about Umoopy    | "i don't like your attitude!"         |
+| Something existential         | "👀"                                  |
+| ":\|"                         | "i :\| you too!"                      |
+| ">:\|"                        | "i >:\| you too!"                     |
+| "what's your favorite animal" | "the cucumber is a majestic creature" |
+| "moopy", "oaky"               | Random Umoopy image                   |
+| "stocks"                      | "buy umoopy stocks"                   |
