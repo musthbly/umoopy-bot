@@ -153,5 +153,9 @@ bot.on('message', message => {
     case 'we all fade away eventually':
       message.react('👀')
       break
+    case 'cries':
+    case 'cry':
+      message.react('😿')
+      break
   }
 })

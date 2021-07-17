@@ -12,6 +12,7 @@ Your Bonfire friend.
 | Something existential         | "👀"                                  |
 | ":\|"                         | "i :\| you too!"                      |
 | ">:\|"                        | "i >:\| you too!"                     |
+| "cries"                       | "😿"                                  |
 | "what's your favorite animal" | "the cucumber is a majestic creature" |
 | "moopy", "oaky"               | Random Umoopy image                   |
 | "stocks"                      | "buy umoopy stocks"                   |
