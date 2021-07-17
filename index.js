@@ -26,11 +26,11 @@ bot.on('message', message => {
       .toLowerCase()
       .replace('\n', '')
       // Punctuation/markup
-      .replace(/"|'|-|–|—|\.|,|!|\?|`|~|\*|_|>/g, '')
+      .replace(/["'\-–—.,!?`~*_<>]/g, '')
       // Emoticons
-      .replace(/=|;/, ':')
-      .replace(/\\|\//, '|')
-      .replace(/:(\)+|\(+)|(\)+|\(+):/, '')
+      .replace(/[=;]/g, ':')
+      .replace(/[|\\/]+/g, '|')
+      .replace(/:?[()]+:?/g, '')
       // Whitespace must be trimmed after everything else is removed
       .trim()
       .replace(/\s+/g, ' ')
