@@ -138,19 +138,20 @@ bot.on('message', message => {
     case 'stocks':
       message.channel.send('buy umoopy stocks')
       break
+    case 'does anything matter':
+    case 'everything we do disappears':
     case 'i am having a crisis of existence':
     case 'i am having an existential crisis':
-    case 'i hate my life':
     case 'i have been living a lie':
     case 'im having a crisis of existence':
     case 'im having an existential crisis':
-    case 'ive been living a lie':
     case 'is anything real':
+    case 'ive been living a lie':
     case 'my entire life is a lie':
     case 'my life is a lie':
     case 'my whole life is a lie':
-    case 'nothing matters in this world':
-    case 'we all fade away eventually':
+    case 'nothing matters':
+    case 'nothingness is inevitable':
       message.react('👀')
       break
     case 'cries':
