@@ -77,54 +77,17 @@ bot.on('message', message => {
       break
     case ':|':
     case '|:':
-    case 'i :| u':
-    case 'i :| you':
-    case 'i |: u':
-    case 'i |: you':
-    case 'i :| u umoopy':
-    case 'i :| you umoopy':
-    case 'i |: u umoopy':
-    case 'i |: you umoopy':
       message.channel.send('i :| you too!')
       break
     case '>:|':
     case '|:<':
-    case 'i >:| u':
-    case 'i >:| you':
-    case 'i |:< u':
-    case 'i |:< you':
-    case 'i >:| u umoopy':
-    case 'i >:| you umoopy':
-    case 'i |:< u umoopy':
-    case 'i |:< you umoopy':
       message.channel.send('i >:| you too!')
       break
-    case 'what is ur fav animal':
-    case 'what is ur fav animal umoopy':
-    case 'what is ur fave animal':
-    case 'what is ur fave animal umoopy':
-    case 'what is ur favorite animal':
-    case 'what is ur favorite animal umoopy':
-    case 'what is your fav animal':
-    case 'what is your fav animal umoopy':
-    case 'what is your fave animal':
-    case 'what is your fave animal umoopy':
-    case 'what is your favorite animal':
-    case 'what is your favorite animal umoopy':
-    case 'whats ur fav animal':
-    case 'whats ur fav animal umoopy':
-    case 'whats ur fave animal':
-    case 'whats ur fave animal umoopy':
-    case 'whats ur favorite animal':
-    case 'whats ur favorite animal umoopy':
-    case 'whats your fav animal':
-    case 'whats your fav animal umoopy':
-    case 'whats your fave animal':
-    case 'whats your fave animal umoopy':
-    case 'whats your favorite animal':
-    case 'whats your favorite animal umoopy':
-      message.channel.send('the cucumber is a majestic creature')
-      message.channel.send('https://wikipedia.org/wiki/Cucumber')
+    case ':}':
+      message.channel.send('that\'s the spirit!')
+      break
+    case ':{':
+      message.channel.send('’tis the season to be jolly')
       break
     // Misspelling of "okay"
     case 'oaky':
@@ -137,26 +100,6 @@ bot.on('message', message => {
       break
     case 'stocks':
       message.channel.send('buy umoopy stocks')
-      break
-    case 'does anything matter':
-    case 'everything we do disappears':
-    case 'i am having a crisis of existence':
-    case 'i am having an existential crisis':
-    case 'i have been living a lie':
-    case 'im having a crisis of existence':
-    case 'im having an existential crisis':
-    case 'is anything real':
-    case 'ive been living a lie':
-    case 'my entire life is a lie':
-    case 'my life is a lie':
-    case 'my whole life is a lie':
-    case 'nothing matters':
-    case 'nothingness is inevitable':
-      message.react('👀')
-      break
-    case 'cries':
-    case 'cry':
-      message.react('😿')
       break
   }
 })
